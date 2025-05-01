@@ -1,33 +1,86 @@
 .hero-section {
   padding: 124px 0;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  position: relative;
 
   @media screen and (min-width: $bp-tablet) {
-    padding: 272px 0;
+    padding: 200px 0;
   }
 
-  &__title {
-    margin-bottom: 48px;
-    color: var(--color-primary-light);
-    text-align: center;
-    font-size: 67px;
-    line-height: 1;
-    font-weight: 900;
+  @media screen and (min-width: $bp-desktop) {
+    padding: 220px 0;
+  }
+
+  &__content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 
     @media screen and (min-width: $bp-desktop) {
-      margin-bottom: 0;
-      font-size: 128px;
-      line-height: 1.5;
+      width: 40%;
+      align-items: flex-start;
     }
   }
 
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    position: relative;
+
+    &--accent {
+      color: var(--secondary);
+
+      &:after {
+        content: '';
+        background-image: url("../../public/images/decor-easy.png");
+        height: 20px;
+        width: 135px;
+        position: absolute;
+        bottom: -14px;
+        right: 32px;
+        display: inline-block;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
   &__button {
-    margin: 0 auto;
+    margin-left: 0;
+    width: 50%;
+  }
+
+  &__image {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      background-image: url("../../public/images/hero-decor.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 574px;
+      z-index: 0;
+    }
 
     @media screen and (min-width: $bp-desktop) {
-      display: none;
+      background-image: url("../../public/images/hero.png");
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 800px;
     }
   }
 }
