@@ -1,0 +1,44 @@
+.contacts-section {
+  padding: 4rem 0;
+  text-align: center;
+
+  &__wrapper {
+    width: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &__contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 60%;
+    }
+  }
+
+  &__button {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &__consent {
+    font-family: var(--second-family);
+    font-style: italic;
+  }
+
+  &__link {
+    color: var(--secondary);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
