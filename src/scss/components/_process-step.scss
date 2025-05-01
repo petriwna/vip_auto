@@ -1,0 +1,19 @@
+.process-step {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__text {
+    margin: 0;
+
+    &--number {
+      font-size: 40px;
+      color: var(--secondary);
+      font-weight: 700;
+    }
+  }
+}
