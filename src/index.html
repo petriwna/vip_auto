@@ -45,6 +45,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
     <meta name="apple-mobile-web-app-title" content="FreeBook"/>
     <link rel="manifest" href="/favicon/site.webmanifest"/>
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 </head>
 <body>
 <header class="header">
@@ -189,21 +194,243 @@
     <section id="advantages" class="section advantages-section">
         <div class="container process-section__container">
             <div class="advantages-section__content">
-                <h2 class="section__title">Why Choose Us</h2>
+                <h2 class="section__title section__title--centered">Why Choose Us</h2>
                 <h3 class="section__subtitle">Your trusted partner in the Canadian premium car market</h3>
-                <ul class="advantages">
-                    <li>📄 Certified and licensed in Canada (OMVIC/AMVIC)</li>
-                    <li>✅ Legal clarity and transaction transparency</li>
-                    <li>👨‍🔧 Over 10 years of experience in the Canadian market</li>
+                <ul class="advantages-section__list">
+                    <li class="advantages-section__advantage advantage">📄 Certified and licensed in Canada
+                        (OMVIC/AMVIC)
+                    </li>
+                    <li class="advantages-section__advantage advantage">✅ Legal clarity and transaction transparency
+                    </li>
+                    <li class="advantages-section__advantage advantage">👨‍🔧 Over 10 years of experience in the Canadian
+                        market
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
-    <section id="examples" class="section">
+    <section id="examples" class="section examples-section">
         <div class="container">
-            <h2>Available Vehicles</h2>
-            <div class="car-grid">
-                <!-- Dynamically loaded examples -->
+            <h2 class="section__title section__title--centered">Available Vehicles</h2>
+            <div class="examples-section__slider">
+                <div class="examples-section__cars swiper-container">
+                    <ul class="examples-section__list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <article class="examples-section__car car">
+                                <img class="car__image" src="./public/images/jaguar.png" alt="Jaguar XEL P250">
+                                <div class="car__text">
+                                    <div>
+                                        <h3 class="car__title">Jaguar XE L P250</h3>
+                                        <p class="car__about">Luxury sedan, immaculate condition, fully certified.
+                                            Available
+                                            in Vancouver.</p>
+                                        <div class="car__plus">
+                                            <ul class="car__list">
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-user"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>4 Passagers</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-automat"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>Auto</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="card__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-cond"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>Air Conditioning</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-dor"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>4 Doors</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="car__price">
+                                        <a href="#contacts" class="car__button button button--link" type="button"
+                                        >Order Now</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="swiper-slide">
+                            <article class="examples-section__car car">
+                                <img class="car__image" src="./public/images/audi.png" alt="Audi R8">
+                                <div class="car__text">
+                                    <div>
+                                        <h3 class="car__title">Audi R8</h3>
+                                        <p class="car__about">V10 performance coupe, showroom condition, low mileage.
+                                            Toronto delivery.</p>
+                                        <div class="car__plus">
+                                            <ul class="car__list">
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-user"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>2 Passagers</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-automat"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>Auto</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="card__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-cond"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>Air Conditioning</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-dor"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>2 Doors</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="car__price">
+                                        <a href="#contacts" class="car__button button button--link" type="button"
+                                        >Order Now</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="swiper-slide">
+                            <article class="examples-section__car car">
+                                <img class="car__image" src="./public/images/bmw.png" alt="BMW M3">
+                                <div class="car__text">
+                                    <div>
+                                        <h3 class="car__title">BMW M3</h3>
+                                        <p class="car__about">Performance tuned, recent service, clean history.
+                                            Alberta-based.</p>
+                                        <div class="car__plus">
+                                            <ul class="car__list">
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-user"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>4 Passagers</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-automat"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>Auto</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="card__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-cond"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>Air Conditioning</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-dor"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>4 Doors</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="car__price">
+                                        <a href="#contacts" class="car__button button button--link" type="button"
+                                        >Order Now</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="swiper-slide">
+                            <article class="examples-section__car car">
+                                <img class="car__image" src="./public/images/lamb.png" alt="Lamborghini Huracan">
+                                <div class="car__text">
+                                    <div>
+                                        <h3 class="car__title">Lamborghini Huracan</h3>
+                                        <p class="car__about">Exotic sports car, head-turning style, ready for the
+                                            road.</p>
+                                        <div class="car__plus">
+                                            <ul class="car__list">
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-user"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>2 Passagers</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-automat"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>Auto</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="card__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-cond"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>Air Conditioning</p>
+                                                </li>
+                                                <li class="car__item">
+                                                    <div class="car__icon-container">
+                                                        <svg class="car__icon" width="20" height="20">
+                                                            <use href="../public/images/icons.svg#icon-dor"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p>2 Doors</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="car__price">
+                                        <a href="#contacts" class="car__button button button--link" type="button"
+                                        >Order Now</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    <div class="pagination">
+                        <span class="pagination__button"></span>
+                        <span class="pagination__button"></span>
+                        <span class="pagination__button"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -325,5 +552,6 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 </html>

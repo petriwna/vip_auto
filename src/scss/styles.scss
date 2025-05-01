@@ -4,14 +4,19 @@
 
 @import './base';
 
+@import 'components/advantage';
 @import 'components/buttons';
+@import 'components/car';
 @import 'components/links';
 @import 'components/input';
 @import 'components/logo';
+@import 'components/pagination';
 @import 'components/process-step';
 @import 'components/service-card';
 
+@import 'layouts/advantages-section';
 @import 'layouts/container';
+@import 'layouts/examples-section';
 @import 'layouts/footer';
 @import 'layouts/header';
 @import 'layouts/hero-section';

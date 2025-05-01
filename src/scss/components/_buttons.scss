@@ -1,12 +1,13 @@
 .button {
   display: block;
-  padding: 10px 24px;
+  border-radius: 8px;
+  padding: 8px;
   color: var(--primary);
   background-color: var(--secondary);
   border: 2px solid var(--secondary);
-  border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  font-size: 14px;
 
   &:hover {
     color: var(--secondary);

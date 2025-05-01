@@ -1,0 +1,17 @@
+.examples-section {
+  &__slider {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  &__cars {
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+}
