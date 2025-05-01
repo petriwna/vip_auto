@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   padding-top: 16px;
+  font-weight: 500;
 
   @media screen and (min-width: $bp-desktop) {
     padding-top: 32px;
@@ -24,16 +25,17 @@
 
   &__menu {
     display: none;
+    text-wrap: nowrap;
 
     @media screen and (min-width: $bp-tablet) {
       display: flex;
-      gap: 64px;
+      gap: 24px;
       flex-grow: 1;
       justify-content: flex-end;
     }
 
     @media screen and (min-width: $bp-desktop) {
-      justify-content: center;
+      gap: 44px;
     }
   }
 
@@ -51,7 +53,7 @@
     height: 24px;
     width: 24px;
     padding: 0;
-    fill: var(--color-primary-light);
+    fill: var(--color-primary);
 
     @media screen and (min-width: $bp-tablet) {
       display: none;
